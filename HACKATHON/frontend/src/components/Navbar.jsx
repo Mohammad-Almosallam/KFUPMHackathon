@@ -1,27 +1,18 @@
 import React, { useState } from "react";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import ModalPref from "./ModalPref";
 function Navbar(props) {
   const user = JSON.parse(localStorage.getItem("user"));
   console.log(user);
   const [toggleNavbar, setToggleNavbar] = useState(false);
-  // const navigate = useNavigate();
-
-  // /* It's checking if the user is authenticated. If not, it redirects to the login page. */
-  // useEffect(() => {
-  //   if (!user) {
-  //     navigate("/login");
-  //   }
-  // }, [user, navigate]);
 
   return (
     <nav class="p-5 sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
         <Link to={"/"} class="flex items-center">
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            MindInstall
+            MateUp
           </span>
         </Link>
         <button
