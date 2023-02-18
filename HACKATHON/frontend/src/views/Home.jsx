@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { IoAccessibilityOutline, IoAppsOutline } from "react-icons/io5";
 import Footer from "../components/Footer";
@@ -7,10 +7,9 @@ import Gradient from "../components/Gradient";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-
   return (
     <>
-      <Navbar btn={"login"}/>
+      <Navbar btn={"login"} />
 
       {/* HERO SECTION */}
 
@@ -64,11 +63,43 @@ function Home() {
             </defs>
           </svg>
         </div>
-        <div className="mx-6 p-2  overflow-hidden text-center ">
+        {/* <div className="mx-6 p-2  overflow-hidden text-center ">
           <h1 className="text-7xl  font-medium max-sm:text-4xl">
             The next generation of searching for roommate.
           </h1>
           <h5 className="  text-gray-400">Join us now</h5>
+        </div> */}
+        <div class="bg-white py-24 sm:py-32">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl class="grid grid-cols-1 gap-y-16 gap-x-8 text-center lg:grid-cols-3">
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  Students looking for roommates
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  44 million
+                </dd>
+              </div>
+
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  Assets under holding
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  $119 trillion
+                </dd>
+              </div>
+
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt class="text-base leading-7 text-gray-600">
+                  New users annually
+                </dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  46,000
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </div>
 
