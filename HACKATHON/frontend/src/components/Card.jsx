@@ -22,11 +22,17 @@ function Card({
         href="#"
         class="block w-fit max-w-3xl mx-auto mt-5 p-6 bg-white border border-gray-200  border-l-8 border-l-black rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {name + "   " + number}
-        </h5>
-        <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {description}
+        <div className="flex justify-between">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {name}
+          </h5>
+
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {number}
+          </h5>
+        </div>
+        <h6 class="mb-2 text-lg   font-normal tracking-tight text-gray-600 dark:text-white">
+          {"Description: " + description}
         </h6>
         <div class="flex flex-wrap">
           {<Box what={"status"} info={status} />}

@@ -17,6 +17,7 @@ import {
   FormLabel,
   RadioGroup,
   Text,
+  Textarea,
 } from "@chakra-ui/react";
 import {
   createPreferences,
@@ -59,8 +60,8 @@ function DrawerPref() {
     quietness: "",
     status: "",
     smoking: "",
+    description: "",
   });
-
   const {
     light,
     sleep,
@@ -74,6 +75,7 @@ function DrawerPref() {
     study,
     cleanliness,
     quietness,
+    description,
   } = formData;
 
   async function handleOnSubmit(e) {
@@ -90,6 +92,7 @@ function DrawerPref() {
       study,
       cleanliness,
       quietness,
+      description,
     };
     setFormData({
       light: "",
@@ -104,8 +107,9 @@ function DrawerPref() {
       quietness: "",
       status: "",
       smoking: "",
+      description: "",
     });
-
+    console.log(prefData);
     const token = JSON.parse(localStorage.getItem("user")).token;
     const message = await createPreferences(prefData, token);
 
@@ -143,6 +147,7 @@ function DrawerPref() {
         study,
         cleanliness,
         quietness,
+        description,
       };
       setFormData({
         light: "",
@@ -157,6 +162,7 @@ function DrawerPref() {
         quietness: "",
         status: "",
         smoking: "",
+        description: "",
       });
 
       const message = await updatePreferences(prefData, userPref[0]._id);
@@ -219,7 +225,12 @@ function DrawerPref() {
             {arrayOfCrieteria.map((eachPref) => {
               return (
                 <FormControl>
-                  <FormLabel fontWeight={"bold"}>{eachPref}</FormLabel>
+                  <FormLabel
+                    fontWeight={"bold"}
+                    className="first-letter:uppercase"
+                  >
+                    {eachPref}
+                  </FormLabel>
                   <RadioGroup
                     onChange={(e) => {
                       setFormData((prevValue) => ({
@@ -249,6 +260,18 @@ function DrawerPref() {
                 </FormControl>
               );
             })}
+            <FormControl className="mb-3">
+              <FormLabel fontWeight={"bold"}>Notes to mention</FormLabel>
+              <Textarea
+                onChange={(e) => {
+                  setFormData((prevValue) => ({
+                    ...prevValue,
+                    ["description"]: e.target.value,
+                  }));
+                }}
+                placeholder="Mention your hobbies, what you like etc..."
+              />
+            </FormControl>
           </DrawerBody>
 
           <DrawerFooter>
@@ -257,6 +280,7 @@ function DrawerPref() {
               bg={"black"}
               variant="solid"
               width={"100%"}
+              colorScheme={""}
               rounded={"none"}
               onClick={(e) => {
                 handleEdit(e, user._id);

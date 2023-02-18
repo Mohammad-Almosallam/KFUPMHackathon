@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -6,6 +6,7 @@ import ModalPref from "./ModalPref";
 function Navbar(props) {
   const user = JSON.parse(localStorage.getItem("user"));
   console.log(user);
+  const [toggleNavbar, setToggleNavbar] = useState(false);
   // const navigate = useNavigate();
 
   // /* It's checking if the user is authenticated. If not, it redirects to the login page. */
@@ -29,6 +30,9 @@ function Navbar(props) {
           class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-solid-bg"
           aria-expanded="false"
+          onClick={() => {
+            setToggleNavbar((prevValue) => !prevValue);
+          }}
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -45,8 +49,15 @@ function Navbar(props) {
             ></path>
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-          <ul class="flex flex-col mt-4   items-center bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+        <div
+          className={
+            toggleNavbar
+              ? "hidden w-full md:block md:w-auto"
+              : "w-full md:block md:w-auto"
+          }
+          id="navbar-solid-bg"
+        >
+          <ul class="flex flex-col mt-4  bg-transparent items-center bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
               <Link
                 to={"/"}
@@ -66,10 +77,10 @@ function Navbar(props) {
             </li>
 
             <li>
-              {user === (undefined ||null)? (
+              {user === (undefined || null) ? (
                 <Link
                   class=" text-black flex cursor-pointer items-center hover:bg-black hover:text-white  transition-all ease-in-out flex-nowrap  px-6 py-2 border-black border-solid border-2"
-                  to={"/"+props.btn}
+                  to={"/" + props.btn}
                 >
                   {props.btn === "" ? "Home" : props.btn}
                   <IoArrowForwardOutline className="ml-2" />

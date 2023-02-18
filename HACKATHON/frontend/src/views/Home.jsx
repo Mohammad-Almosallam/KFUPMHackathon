@@ -88,10 +88,8 @@ function Home() {
         </div>
       </div>
 
-      <hr className=" my-10"></hr>
-
       {/* Features */}
-      <div className="mx-6 p-2 overflow-hidden text-center">
+      <div className="  mt-60 max-sm:mt-20 p-2 overflow-hidden text-center">
         <h2 className=" text-7xl max-sm:text-4xl font-bold">Features</h2>
       </div>
       <div class="space-y-12 mt-20 p-10 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

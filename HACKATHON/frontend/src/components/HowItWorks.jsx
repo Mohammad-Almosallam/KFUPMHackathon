@@ -4,7 +4,7 @@ import { IoPersonOutline } from "react-icons/io5";
 function HowItWorks() {
   return (
     <div>
-      <div class="mx-auto container f-f-p px-4 xl:px-0 py-24">
+      <div class="mx-auto container mt-40 f-f-p px-4 xl:px-0 py-24">
         <h1 class="focus:outline-none text-center text-4xl pb-16 lg:text-6xl font-bold dark:text-white lg:leading-9 tracking-wider text-gray-900">
           How it works?
         </h1>
@@ -103,11 +103,11 @@ function HowItWorks() {
             />
             <div class="mt-10">
               <h1 class="text-xl text-center dark:text-white  tracking-wide leading-5 font-bold">
-                SignUp for an Account
+                Sing up
               </h1>
               <h2 class="text-gray-500 dark:text-gray-200 mt-3 text-center text-base leading-6 tracking-wide">
-                Sign up on our website and opt for a program that suits you the
-                best .
+                Sign up on our website and add your preferences that suits you
+                the best.
               </h2>
             </div>
             <img
@@ -121,11 +121,11 @@ function HowItWorks() {
             />
             <div class="mt-10">
               <h1 class="text-xl tracking-wide dark:text-white  text-center leading-5 font-bold">
-                Create a Wallet
+                Search{" "}
               </h1>
               <h2 class="text-gray-500 dark:text-gray-200 mt-3 pl-3 text-center text-base leading-6 tracking-wide">
-                Create a wallet by linking a payment method that you’re
-                comfortable with. Paypal, Visa and more
+                Search for the best matching roommate according to our
+                customizable preferences.
               </h2>
             </div>
             <img
@@ -140,11 +140,10 @@ function HowItWorks() {
             />
             <div class="flex mt-10 flex-col items-center md:items-start md:w-8/12">
               <h1 class="text-xl text-center dark:text-white tracking-wide leading-5 font-bold">
-                Start your Transactions
+                Connect
               </h1>
               <h2 class="text-gray-500 dark:text-gray-200 mt-3 text-center text-base leading-6 tracking-wide">
-                Start transactions right away. No more complicated process for
-                anything else.
+                Connect to your matching mate via his contact information.
               </h2>
             </div>
           </div>
