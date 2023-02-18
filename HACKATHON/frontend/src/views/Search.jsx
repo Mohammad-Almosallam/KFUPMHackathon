@@ -111,15 +111,13 @@ function Search() {
   return (
     <div className="">
       <Navbar />
-      <div className=" grid grid-cols-4 gap-4">
-        <div className="mt-5 col-span-1">
+      <div className=" grid mt-16 grid-cols-4 gap-4">
+        <div className="  col-span-1">
+          <h1 className=" text-4xl font-bold ml-10 mb-8">Filter</h1>
           {/* <FilterList /> */}
           {prefs.map((pref) => {
             return <Selector name={pref} filterAdvanced={filterAdvanced} />;
           })}
-          <Link to="/search">
-            <button>Reset</button>
-          </Link>
         </div>
         <div className="col-span-3">
           <SearchInput updateData={updateData} />

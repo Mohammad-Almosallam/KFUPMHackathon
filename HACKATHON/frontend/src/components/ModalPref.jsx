@@ -104,7 +104,7 @@ function DrawerPref() {
       quietness: "",
       status: "",
       smoking: "",
-    })
+    });
 
     const token = JSON.parse(localStorage.getItem("user")).token;
     const message = await createPreferences(prefData, token);
@@ -157,7 +157,7 @@ function DrawerPref() {
         quietness: "",
         status: "",
         smoking: "",
-      })
+      });
 
       const message = await updatePreferences(prefData, userPref[0]._id);
 
@@ -175,8 +175,9 @@ function DrawerPref() {
     <>
       <Button
         ref={btnRef}
-        color={"white"}
-        bgColor={"black"}
+        color={"black"}
+        bgColor={"transparent"}
+        border={"solid 1px black"}
         rounded={"0"}
         colorScheme={""}
         onClick={onOpen}
@@ -185,9 +186,11 @@ function DrawerPref() {
       </Button>
       <Button
         ref={btnRef}
-        color={"white"}
-        bgColor={"black"}
+        color={"black"}
+        bgColor={"transparent"}
+        border={"solid 1px black"}
         rounded={"0"}
+        ml={"3"}
         colorScheme={""}
         onClick={() => {
           logout();

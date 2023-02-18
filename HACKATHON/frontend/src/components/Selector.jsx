@@ -9,9 +9,9 @@ function Selector({ name, filterAdvanced }) {
     filterAdvanced(name, newSelect);
   }
   return (
-    <div className="flex justify-center ml-5">
+    <div className="flex  justify-center ml-12">
       <div className="mb-3 xl:w-96">
-        <h3 className="pb-3">{name}</h3>
+        <h3 className="pb-3  first-letter:uppercase font-bold">{name}</h3>
         <select
           value={value}
           onChange={updadeSelector}

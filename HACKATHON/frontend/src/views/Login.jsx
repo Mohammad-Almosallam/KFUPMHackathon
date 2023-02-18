@@ -14,6 +14,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
+import LoginSVG from "../components/LoginSVG";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -53,7 +54,7 @@ function Login() {
 
   return (
     <>
-      <Navbar btn={""}/>
+      <Navbar btn={""} />
       <Flex
         flexDir={"column"}
         h="100vh"
@@ -61,7 +62,9 @@ function Login() {
         align={"center"}
       >
         <Flex width={"100%"} h={"100vh"} flexDir={"row"}>
-          <Box flexDir={"column"} display={"flex"} width={"50%"}></Box>
+          <Box overflow={"hidden"} display={"flex"} width={"80%"}>
+            <LoginSVG />
+          </Box>
           <Box w={"100%"} margin={"auto"}>
             <Flex
               flexDirection={"column"}

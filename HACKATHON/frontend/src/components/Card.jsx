@@ -20,7 +20,7 @@ function Card({
     <div className="m-auto ">
       <a
         href="#"
-        class="block w-fit max-w-3xl mx-auto mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        class="block w-fit max-w-3xl mx-auto mt-5 p-6 bg-white border border-gray-200  border-l-8 border-l-black rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {name + "   " + number}

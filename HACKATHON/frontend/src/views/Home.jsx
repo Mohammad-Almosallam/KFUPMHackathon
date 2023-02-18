@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import HowItWorks from "../components/HowItWorks";
 import Gradient from "../components/Gradient";
 import { useNavigate } from "react-router-dom";
+import HeroSVG from "../components/HeroSVG";
 
 function Home() {
   return (
@@ -18,21 +19,13 @@ function Home() {
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap items-center -m-8">
             <div class="w-full md:w-1/2 p-8">
-              <h2 class="mb-6 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight">
-                Find the roommate you wished for.
+              <h2 class="mb-6 text-6xl  md:text-7xl font-bold font-heading tracking-px-n leading-tight">
+                Find the roommate you wished for
               </h2>
-              <p class="font-sans text-lg text-gray-900 leading-relaxed md:max-w-lg">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever sin
-              </p>
+              <p class="font-sans text-lg text-gray-900 leading-relaxed md:max-w-lg"></p>
             </div>
-            <div class="w-full md:w-1/2 p-8">
-              <img
-                class="transform hover:-translate-y-16 transition ease-in-out duration-1000"
-                src="flaro-assets/images/features/feature.png"
-                alt=""
-              />
+            <div class="w-full md:w-1/2 hover:scale-105 transition-all ease-in-out">
+              <HeroSVG />
             </div>
           </div>
         </div>
@@ -69,41 +62,8 @@ function Home() {
           </h1>
           <h5 className="  text-gray-400">Join us now</h5>
         </div> */}
-        <div class="bg-white py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <dl class="grid grid-cols-1 gap-y-16 gap-x-8 text-center lg:grid-cols-3">
-              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">
-                  Students looking for roommates
-                </dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  44 million
-                </dd>
-              </div>
-
-              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">
-                  Assets under holding
-                </dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  $119 trillion
-                </dd>
-              </div>
-
-              <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">
-                  New users annually
-                </dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  46,000
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
       </div>
 
-      <hr className="  my-28"></hr>
       {/* Who we are  */}
       <div className="flex ">
         {/* <div className="  w-">
@@ -111,14 +71,18 @@ function Home() {
         </div> */}
 
         <div className="mx-6 p-2 overflow-hidden text-center">
-          <h2 className=" text-7xl max-sm:text-4xl">Who we are?</h2>
+          <h2 className=" text-7xl max-sm:text-4xl font-bold">Who we are?</h2>
           <div className="">
             <h3 className="pt-10 px-10 text-lg max-sm:px-10">
-              Our web application allows students to create a profile with
-              information such as their name, age, gender, major, hobbies, and
-              any other relevant information that could help them find a
-              compatible roommate, also allows students to communicate with
-              potential roommates and get to know them before making a decision.
+              Welcome to our website, the perfect solution for those seeking a
+              roommate. Our user-friendly platform makes it easy for you to
+              search for compatible roommates based on shared interests,
+              lifestyle, and location of building. Simply create an account,
+              fill out your profile, and start browsing through our extensive
+              database of potential roommates. You can communicate with
+              potential matches using contact information, and our intuitive
+              search tools will help you find the perfect fit. With our website,
+              finding a roommate has never been easier!
             </h3>
           </div>
         </div>
@@ -128,36 +92,40 @@ function Home() {
 
       {/* Features */}
       <div className="mx-6 p-2 overflow-hidden text-center">
-        <h2 className=" text-7xl max-sm:text-4xl">Features</h2>
+        <h2 className=" text-7xl max-sm:text-4xl font-bold">Features</h2>
       </div>
       <div class="space-y-12 mt-20 p-10 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
         <div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">
+            Roommate search
+          </h3>
           <p class="text-gray-500 dark:text-gray-400">
-            Plan it, create it, launch it. Collaborate seamlessly with all the
-            organization and hit your marketing goals every month with our
-            marketing plan.
-          </p>
-        </div>
-        <div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Legal</h3>
-          <p class="text-gray-500 dark:text-gray-400">
-            Protect your organization, devices and stay compliant with our
-            structured workflows and custom permissions made for you.
+            Users can search for potential roommates based on various
+            criteria,The search results should display relevant information
+            about each potential roommate basic information, and a brief
+            description.
           </p>
         </div>
         <div>
           <h3 class="mb-2 text-xl font-bold dark:text-white">
-            Business Automation
+            Easy Connection
           </h3>
           <p class="text-gray-500 dark:text-gray-400">
-            Auto-assign tasks, send Slack messages, and much more. Now power up
-            with hundreds of new templates to help you get started.
+            Users can create a personal account and fill out a profile with
+            information about themselves, and connect with others accordingly.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">
+            Advanced Filtering
+          </h3>
+          <p class="text-gray-500 dark:text-gray-400">
+            Users can search for roommates according to various criteria and can
+            benifit from the filtering system.
           </p>
         </div>
       </div>
 
-      <hr className=" my-10"></hr>
       {/* How it works */}
       <HowItWorks />
       {/* Footer */}

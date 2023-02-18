@@ -5,7 +5,7 @@ function HowItWorks() {
   return (
     <div>
       <div class="mx-auto container f-f-p px-4 xl:px-0 py-24">
-        <h1 class="focus:outline-none text-center text-4xl pb-16 lg:text-6xl font-semibold dark:text-white lg:leading-9 tracking-wider text-gray-900">
+        <h1 class="focus:outline-none text-center text-4xl pb-16 lg:text-6xl font-bold dark:text-white lg:leading-9 tracking-wider text-gray-900">
           How it works?
         </h1>
         <div class="md:mt-24 f-f-p">
@@ -28,11 +28,11 @@ function HowItWorks() {
               </div>
               <div class="flex mt-12 flex-col items-center lg:items-end md:w-8/12">
                 <h1 class="focus:outline-none dark:text-white  text-xl font-bold leading-5">
-                  Create a Wallet
+                  Search
                 </h1>
                 <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 pl-3 text-center md:text-right text-base leading-6 tracking-wide">
-                  Create a wallet by linking a payment method that you’re
-                  comfortable with. Paypal, Visa and more{" "}
+                  Search for the best matching roommate according to our
+                  customizable preferences.
                 </h2>
               </div>
               <div aria-label="transactions" role="img">
@@ -60,11 +60,11 @@ function HowItWorks() {
 
               <div class="flex mt-6 flex-col items-center md:items-start md:w-8/12">
                 <h1 class="focus:outline-none dark:text-white  text-xl font-bold leading-5">
-                  SignUp for an Account
+                  Sign up
                 </h1>
                 <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 text-base leading-6 tracking-wide">
-                  Sign up on our website and opt for a program that suits you
-                  the best .{" "}
+                  Sign up on our website and add your preferences that suits you
+                  the best.
                 </h2>
               </div>
               <div aria-label="wallet" role="img">
@@ -83,11 +83,10 @@ function HowItWorks() {
               </div>
               <div class="flex mt-6 flex-col items-center md:items-start md:w-8/12">
                 <h1 class="focus:outline-none text-xl dark:text-white font-bold leading-5">
-                  Start your Transactions
+                  Connect
                 </h1>
                 <h2 class="focus:outline-none text-gray-500 dark:text-gray-200 mt-3 text-base leading-6 tracking-wide">
-                  Start transactions right away. No more complicated process for
-                  anything else.
+                  Connect to your matching mate via his contact information.
                 </h2>
               </div>
             </div>
