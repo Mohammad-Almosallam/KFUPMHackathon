@@ -71,8 +71,14 @@ function Home() {
         </div> */}
 
         <div className="mx-6 p-2 overflow-hidden text-center">
-          <h2 className=" text-7xl max-sm:text-4xl font-bold">Who we are?</h2>
-          <div className="">
+          <h2
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className=" text-7xl max-sm:text-4xl font-bold"
+          >
+            Who we are?
+          </h2>
+          <div data-aos="fade-down" data-aos-duration="1000">
             <h3 className="pt-10 px-10 text-lg max-sm:px-10">
               Welcome to our website, the perfect solution for those seeking a
               roommate. Our user-friendly platform makes it easy for you to
@@ -89,15 +95,27 @@ function Home() {
       </div>
 
       {/* Features */}
-      <div className="  mt-60 max-sm:mt-20 p-2 overflow-hidden text-center">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        className="  mt-60 max-sm:mt-20 p-2 overflow-hidden text-center"
+      >
         <h2 className=" text-7xl max-sm:text-4xl font-bold">Features</h2>
       </div>
       <div class="space-y-12 mt-20 p-10 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
         <div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="mb-2 text-xl font-bold dark:text-white"
+          >
             Roommate search
           </h3>
-          <p class="text-gray-500 dark:text-gray-400">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="text-gray-500 dark:text-gray-400"
+          >
             Users can search for potential roommates based on various
             criteria,The search results should display relevant information
             about each potential roommate basic information, and a brief
@@ -105,19 +123,35 @@ function Home() {
           </p>
         </div>
         <div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="mb-2 text-xl font-bold dark:text-white"
+          >
             Easy Connection
           </h3>
-          <p class="text-gray-500 dark:text-gray-400">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="text-gray-500 dark:text-gray-400"
+          >
             Users can create a personal account and fill out a profile with
             information about themselves, and connect with others accordingly.
           </p>
         </div>
         <div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="mb-2 text-xl font-bold dark:text-white"
+          >
             Advanced Filtering
           </h3>
-          <p class="text-gray-500 dark:text-gray-400">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="text-gray-500 dark:text-gray-400"
+          >
             Users can search for roommates according to various criteria and can
             benifit from the filtering system.
           </p>
